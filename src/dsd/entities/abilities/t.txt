@@ -1,0 +1,49 @@
+
+      if (unit.rotation > 0 && unit.rotation < 90) {
+        unit.move(length, length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation > 90 && unit.rotation < 180) {
+        unit.move(-length, length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation > 180 && unit.rotation < 270) {
+        unit.move(-length, -length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation > 270 && unit.rotation < 360) {
+        unit.move(length, -length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation == 0 || unit.rotation == 360) {
+        unit.move(0, length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation == 90) {
+        unit.move(-length, 0);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation == 180) {
+        unit.move(0, -length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation == 270) {
+        unit.move(length, 0);
+        downEffect.at(unit.x, unit.y);
+      }
+
+      unit.move(Mathf.cos(unit.rotation) * length, Mathf.sin(unit.rotation) * length);
+
+
+
+      if (unit.rotation >= 0 && unit.rotation <= 90) {
+        unit.move(Math.abs(Mathf.cos(unit.rotation)) * length, Math.abs(Mathf.sin(unit.rotation)) * length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation >= 90 && unit.rotation <= 180) {
+        unit.move(Math.abs(Mathf.cos(unit.rotation)) * length, Math.abs(Mathf.sin(unit.rotation)) * -length);
+        downEffect.at(unit.x, unit.y);
+      } else if (unit.rotation >= 180 && unit.rotation <= 270) {
+        unit.move(Math.abs(Mathf.cos(unit.rotation)) * -length, Math.abs(Mathf.sin(unit.rotation)) * -length);
+        downEffect.at(unit.x, unit.y);
+      } else {
+        unit.move(Math.abs(Mathf.cos(unit.rotation)) * -length, Math.abs(Mathf.sin(unit.rotation)) * length);
+        downEffect.at(unit.x, unit.y);
+      }
+
+
+
+
+
