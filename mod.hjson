@@ -1,0 +1,13 @@
+    {
+"name":"这是一个模组",//模组名字
+"displayName":"永恒纪元",//模组名字
+"author":"一只一只铼铱合金(作者本体)\n秀域(不知道)\n铂佬(吉祥物)\n秦一爱吃曲奇\n玖撧一壹丨",//模组作者
+"description":"一个作者突发恶疾写出来的模组",//模组介绍
+"version":"1.1.4.5.1.4",//模组版本
+"minGameVersion":"148",//模组适配游戏版本
+#the fully qualified main class of the mod
+main: "dsd.Main"
+
+#this is a java mod
+java: true
+}
