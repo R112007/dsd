@@ -2,6 +2,7 @@ package dsd.content;
 
 import dsd.entities.abilities.FlashAbility;
 import dsd.entities.abilities.NoDamaged;
+import dsd.entities.abilities.PercentDamage;
 import mindustry.content.Fx;
 import mindustry.content.UnitTypes;
 import mindustry.entities.Effect;
@@ -35,7 +36,7 @@ public class DSDUnits {
         this.flying = true;
         this.health = 500;
         this.speed = 2;
-        this.abilities.add(new NoDamaged(120f));
+        this.abilities.add(new PercentDamage(0.7f));
         this.weapons.add(new Weapon() {
           {
             this.reload = 5.0f;
@@ -58,6 +59,7 @@ public class DSDUnits {
         });
       }
     };
-//    UnitTypes.dagger.abilities.add(new FlashAbility(20f, 3f, Fx.pulverizeMedium, 3f, 3f, false));
+    // UnitTypes.dagger.abilities.add(new FlashAbility(20f, 3f, Fx.pulverizeMedium,
+    // 3f, 3f, false));
   }
 }
